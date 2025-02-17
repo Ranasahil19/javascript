@@ -49,4 +49,29 @@ console.log(typeof myFunction);
 const fun = () => {
     console.log(2+2);
 }
-fun()
+// fun()
+
+// Stack(primitive) , Heap(Non primitive)
+
+let myYoutubename = "sr_gaming"
+let anotherName = myYoutubename
+anotherName = "sr_edits"
+console.log(myYoutubename);
+
+console.log(anotherName);
+
+
+let userOne = {
+    email : "sr@gmail.com",
+    name : "sahil",
+    age : 20
+}
+
+let userTwo = userOne
+
+userTwo.email = "sahil@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
