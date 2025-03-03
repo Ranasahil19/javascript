@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+    <script>
+
+        let interalId;
+        const sayDate = function(str){
+            console.log(str,Date.now())
+        }
+        
+        document.getElementById('start').addEventListener('click', function(){
+        if(!interalId){
+             interalId = setInterval(sayDate, 1000, "freefire");
+        }
+        })
+        
+        document.getElementById('stop').addEventListener('click' , function(){
+            clearInterval(interalId);
+            interalId = null
+        })
+
+
+    </script>
+</html>
